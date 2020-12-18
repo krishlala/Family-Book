@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Family Book</title>
+        <link rel="stylesheet" href="index.css"/>
+
+      </head>
+      
+      <body>
+      <div>
+        <button type="button" onclick="nextslide()"> Next</button>
+    </div>
+    <p1 id="family">Krish Lala</p1> 
+
+    <script>
+        var family = [
+  "Kushal Lala/brother",
+  "Kailash Lala/Dad",
+  "Bharti Bathija Lala/Mom",
+  "Krish Lala again!"
+];
+
+var i = 0;
+function nextslide() {
+  
+document.getElementById("family").innerHTML = family[i]; i++;
+}
+    </script>
+  </body>
+</html>
